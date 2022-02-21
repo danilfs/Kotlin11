@@ -30,11 +30,13 @@ class MainActivity : AppCompatActivity() {
             var i = 2
             while (i<10){
                 println("While ${i++}")
+                Toast.makeText(this, i.toString(), Toast.LENGTH_SHORT).show()
             }
         }
         findViewById<Button>(R.id.for_circle).setOnClickListener{
             for (i in 10 downTo 1){
                 println("for $i")
+                Toast.makeText(this, i.toString(), Toast.LENGTH_SHORT).show()
             }
         }
     }
